@@ -1,23 +1,32 @@
 import { React } from 'react';
+import Circle from './Circle';
 
 const boxStyle = {
-	width: '300px',
-	border: '1px solid #ccc',
-	borderRadius: '5px',
+	width: '500px',
+	height: '500px',
+	border: '10px solid #ccc',
+	borderRadius: '10px',
 	padding: '20px',
-	margin: '0 auto',
+	margin: '25px',
 	marginTop: '100px',
 };
+const ex = { margin: '30px' };
 
-const GmailLogin = () => <div>
-	<bold> <h1>GOOGLE ACCOUNT </h1> </bold>
-	<h1> Welcome To Google Account</h1>
-	<label htmlFor="fname">Enter Your MailId:</label>
-	<input type="text"/>
-	<h2>Enter your Passward:</h2>
-	<input type="text" value="Enter Passward"/>
-	<div><input type="submit" value="Submit"/></div>
-	<div style={ boxStyle }/>
+const GmailLogin = () => <div><center>
+	<div style={ boxStyle }>
+		<bold>
+			<h1>GOOGLE ACCOUNT </h1>
+		</bold>
+		<h2> Welcome To Google Account</h2>
+		<label htmlFor="mailId">Enter Your MailId:</label>
+		<input type="text"/><br/>
+		<div><div style={ ex }>
+			<label htmlFor="enterpassward">Enter PassWard:</label>
+			<input type="text"/></div>
+		</div>
+		<input type="submit" value="  Login  "/><br/>
+		<button onClick={ Circle }/>
+	</div></center>
 </div>;
 
 export default GmailLogin;
