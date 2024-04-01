@@ -2,9 +2,9 @@ import { React } from 'react';
 
 const Circle = () => {
 	const circleStyle = {
-		width: '100px',
-		height: '100px',
-		backgroundColor: 'red',
+		width: '300px',
+		height: '300px',
+		backgroundColor: 'indigo',
 		borderRadius: '50%',
 	};
 

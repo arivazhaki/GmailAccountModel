@@ -1,5 +1,6 @@
+/* eslint-disable no-console */
 import { React } from 'react';
-import Circle from './Circle';
+import ComponentNew from './ComponentNew';
 
 const boxStyle = {
 	width: '500px',
@@ -10,7 +11,13 @@ const boxStyle = {
 	margin: '25px',
 	marginTop: '100px',
 };
+
 const ex = { margin: '30px' };
+
+const subscribeMsg = () =>
+	<div> welcome Our GMai lAccount</div>;
+
+const handleChange = (event) => console.log(event.target.value);
 
 const GmailLogin = () => <div><center>
 	<div style={ boxStyle }>
@@ -22,10 +29,11 @@ const GmailLogin = () => <div><center>
 		<input type="text"/><br/>
 		<div><div style={ ex }>
 			<label htmlFor="enterpassward">Enter PassWard:</label>
-			<input type="text"/></div>
+			<input type="text" onChange={ handleChange }/></div>
 		</div>
 		<input type="submit" value="  Login  "/><br/>
-		<button onClick={ Circle }/>
+		<button onClick={ subscribeMsg }/>
+		<button onClick={ ComponentNew }/>
 	</div></center>
 </div>;
 
