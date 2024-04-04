@@ -1,15 +1,14 @@
-import React from 'react ';
-import NewColor from './NewColor';
+import { React } from 'react';
 
-const squareStyle = {
-	width: '100px',
-	height: '100px',
-	backgroundColor: 'blue',
-	cursor: 'pointer',
+const Colorchangeprogram = () => {
+	const squareStyle = {
+		width: '400px',
+		height: '400px',
+		backgroundColor: 'blue',
+		border: 'black',
+	};
+
+	return <div style={ squareStyle }/>;
 };
-
-const Colorchangeprogram = () => <div>
-	<div style={ squareStyle }/><div>{ NewColor }</div>;
-</div>;
 
 export default Colorchangeprogram;

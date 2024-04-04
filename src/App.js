@@ -1,10 +1,10 @@
 import { React } from 'react';
 import './App.scss';
-import GmailLogin from './components/GmailLogin';
+import Square from './components/Square';
 
 const App = () =>
-	<div className="App">
-		<GmailLogin/>
+	<div className="App"><center>Square
+		<Square/></center>
 	</div>;
 
 export default App;
