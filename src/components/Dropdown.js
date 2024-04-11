@@ -1,6 +1,6 @@
-/* eslint-disable max-lines-per-function */
 /* eslint-disable no-mixed-spaces-and-tabs */
 /* eslint-disable object-shorthand */
+/* eslint-disable max-lines-per-function */
 import React, { useState } from 'react';
 
 const square = {

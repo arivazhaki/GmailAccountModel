@@ -2,14 +2,14 @@
 import React from 'react';
 import { peek } from '@laufire/utils/debug';
 
-const SelectBox = ({ data: { shape, shapeChange, shapes }}) => {
-	peek(shape);
+const SelectBox = ({ data: { value, handler, list, property }}) => {
+	peek(value);
 	return (
 		<select
-			value={ shape }
-			onChange={ shapeChange }
+			value={ value }
+			onChange={ handler }
 		>
-			{ shapes.map((newValue, index) =>
+			{ list.map((newValue, index) =>
 				<option
 					key={ index }
 					value={ newValue }

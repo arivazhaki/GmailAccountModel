@@ -1,10 +1,10 @@
 import { React } from 'react';
 import './App.scss';
-import DropdownusingMap from './components/DropdownusingMap';
+import OneDropdown from './components/OneDropdown';
 
 const App = () =>
 	<div className="App"><center>
-		<DropdownusingMap/></center>
+		<OneDropdown/></center>
 	</div>;
 
 export default App;
